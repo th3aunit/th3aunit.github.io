@@ -1,8 +1,8 @@
 persona set marker d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741
 persona set action {}
 
-persona set action.yes @yes.as
-persona set action.no @no.as
+persona set action.yes say /me stomps once
+persona set action.no say /me stomps twice
 persona set action.hi say /me curtsies
 persona set action.bye say /me curtsies
 persona set action.nicker say /me plays nicker.aiff
