@@ -1,2 +1,5 @@
 # Block access to .git directory
 RedirectMatch 404 /\.git
+RedirectMatch 404 /\.github
+RedirectMatch 404 /LICENSE
+RedirectMatch 404 /README\.md
