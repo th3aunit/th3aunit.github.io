@@ -2,8 +2,8 @@
 
 # function to generate index.html for the given directory
 generateIndex() {
-    for file in $1/*; do
-        if [ "${file##*/}" == "index.html" ]; then
+    for file in "$1"/*; do
+        if [ "${file##*/}" = "index.html" ]; then
             continue
         fi
         if [ -d "$file" ]; then
