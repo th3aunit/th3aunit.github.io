@@ -12,15 +12,8 @@ generateIndex() {
         else
             echo "Processing ${file##*}"
             echo "${file##*/}" >> "$1/index.html"
-            generateSizeIndex "$1" "${file##*/}"
         fi
     done
-}
-
-# function to generate index.html?<filename>
-# the file contains just the size of the file in bytes
-generateSizeIndex() {
-    stat -c%s "$1/$2" > "$1/index.html?$2"
 }
 
 # generate index.html for personas
