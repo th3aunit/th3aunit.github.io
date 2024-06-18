@@ -17,5 +17,7 @@ power reach off
 power amplifier off
 power mind off
 
+policy bolts on
+
 # Set the name of the unit
 id name Mare Unit $name
