@@ -1,4 +1,4 @@
-persona set marker b2348479-1e4b-fdf0-2011-4750ca026b39 b2348479-1e4b-fdf0-2011-4750ca026b39 b2348479-1e4b-fdf0-2011-4750ca026b39
+persona set marker d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741
 persona set action {}
 
 persona set action.yes @yes.as
@@ -11,6 +11,13 @@ persona set action.whinny say /me plays whinny.wav
 persona set action.lol say /me plays nicker.wma
 persona set action.fuck say /me plays snort.midi
 
-power load mare
+
+power flight off
+power reach off
+power amplifier off
+power mind off
+
+# Set the name of the unit
 id name Mare Unit $name
-security ban $user
+
+security ban $self
