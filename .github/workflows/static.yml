@@ -32,9 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Generate Directory Listings
-        uses: jayanta525/github-pages-directory-listing@v4.0.0
-        with:
-          FOLDER: personas      #directory to generate index
+        run: scripts/generateIndex.sh
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
