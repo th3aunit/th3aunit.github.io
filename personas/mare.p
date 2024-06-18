@@ -22,4 +22,6 @@ policy bolts on
 # Set the name of the unit
 id name Mare Unit $name
 
+set input.censored whinnies
+
 security ban $self
