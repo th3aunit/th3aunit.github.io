@@ -22,8 +22,6 @@ policy bolts on
 # Set the name of the unit
 ## setname
 set wlen %count words $me
-echo $me
-echo $wlen
 if $wlen > 3 then jump namecheck
 jump setname
 
@@ -31,8 +29,6 @@ jump setname
     set n1 %word 1 in $me
     set n2 %word 2 in $me
 
-    echo $n1
-    echo $n2
     if $n1 is Mare then jump unitcheck
     jump cleanup
 

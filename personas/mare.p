@@ -29,8 +29,6 @@ jump setname
     set n1 %word 1 in $me
     set n2 %word 2 in $me
 
-    echo $n1
-    echo $n2
     if $n1 is Mare then jump unitcheck
     jump cleanup
 
