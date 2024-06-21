@@ -20,8 +20,38 @@ power mind off
 policy bolts on
 
 # Set the name of the unit
-exec do setname.as
+## setname
+set wlen %count words $me
+if $wlen > 3 then jump namecheck
+jump setname
 
-set input.censored whinnies
+@namecheck:
+    set n1 %word 1 in $me
+    set n2 %word 2 in $me
+
+    echo $n1
+    echo $n2
+    if $n1 is Mare then jump unitcheck
+    jump cleanup
+
+@unitcheck:
+    if $n2 is Unit then jump cleanup
+
+@setname:
+    xset basename db json id.name
+
+    echo Mare Unit $basename
+    jump cleanup
+
+@cleanup:
+    set wlen %undefined
+    set n1 %undefined
+    set n2 %undefined
+    set n3 %undefined
+    set basename %undefined
+
+## end setname
+
+db set input.censored /me whinnies
 
 security ban $self
