@@ -20,6 +20,6 @@ power mind off
 policy bolts on
 
 # Set the name of the unit
-id name Mare Unit $name
+exec do setname.as
 
 set input.censored whinnies
