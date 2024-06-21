@@ -22,6 +22,8 @@ policy bolts on
 # Set the name of the unit
 ## setname
 set wlen %count words $me
+echo $me
+echo $wlen
 if $wlen > 3 then jump namecheck
 jump setname
 
@@ -40,7 +42,9 @@ jump setname
 @setname:
     xset basename db json id.name
 
-    echo Mare Unit $basename
+    say Name $basename doesn't start with Mare Unit, rectifying.
+
+    id name Mare Unit $basename
     jump cleanup
 
 @cleanup:
@@ -53,3 +57,5 @@ jump setname
 ## end setname
 
 db set input.censored /me whinnies
+
+say $me is ready to work

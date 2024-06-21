@@ -40,7 +40,9 @@ jump setname
 @setname:
     xset basename db json id.name
 
-    echo Mare Unit $basename
+    say Name $basename doesn't start with Mare Unit, rectifying.
+
+    id name Mare Unit $basename
     jump cleanup
 
 @cleanup:
