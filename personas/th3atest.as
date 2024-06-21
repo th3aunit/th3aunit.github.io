@@ -1,11 +1,18 @@
-xset idname db id.name
+set wlen %count words $me
+if $wlen > 3 then jump namecheck
+jump cleanup
 
-echo $idname.0
-echo $idname.1
-echo $idname.2
-echo $idname.3
-echo $idname.4
-echo $idname.5
+@namecheck:
+    set n1 1 in $me
+    set n2 2 in $me
+    set n3 3 in $me
+
+    echo n1
+    echo n2
+    echo n3
 
 @cleanup:
-    set idname %undefined
+    set wlen %undefined
+    set n1 %undefined
+    set n2 %undefined
+    set n3 %undefined
