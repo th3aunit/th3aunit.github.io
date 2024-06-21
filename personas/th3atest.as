@@ -8,11 +8,11 @@ jump setname
 
     echo $n1
     echo $n2
-    if $n1 is Mare jump unitcheck
+    if $n1 is Mare then jump unitcheck
     @jump cleanup
 
 @unitcheck:
-    if $n2 is Unit jump cleanup
+    if $n2 is Unit then jump cleanup
 
 @setname:
     xset basename db json id.name
