@@ -7,9 +7,9 @@ jump cleanup
     set n2 2 in $me
     set n3 3 in $me
 
-    echo n1
-    echo n2
-    echo n3
+    echo $n1
+    echo $n2
+    echo $n3
 
 @cleanup:
     set wlen %undefined
