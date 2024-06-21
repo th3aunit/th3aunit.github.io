@@ -18,7 +18,7 @@ function filter_filenames(string $file) {
         '..',
         '.'
     ];
-    return !array_search($file, $unlistedFiles);
+    return array_search($file, $unlistedFiles) === false;
 }
 
 $items = scandir(getcwd());
