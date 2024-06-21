@@ -1,6 +1,6 @@
 set wlen %count words $me
 if $wlen > 3 then jump namecheck
-jump cleanup
+jump setname
 
 @namecheck:
     set n1 %word 1 in $me
@@ -13,9 +13,12 @@ jump cleanup
 
 @unitcheck:
     if $n2 is Unit jump cleanup
+
+@setname:
     xset basename db json id.name
 
     echo Mare Unit $basename
+    jump cleanup
 
 @cleanup:
     set wlen %undefined
