@@ -1,0 +1,47 @@
+# Custom subsystems
+
+power.system.22 {}
+power.system.22.name camera
+power.system.22.rlv camunlock=?
+power.system.22.req [0,1,4]
+power.system.22.req [0,1]
+power.system.22.draw 10
+
+power.system.23 {}
+power.system.23.name inventory
+power.system.23.rlv showinv=?,edit=?
+power.system.23.req [0]
+power.system.23.draw 10
+
+power.system.24 {}
+power.system.24.name reader
+power.system.24.rlv viewnote=?,viewscript=?,viewtexture=?
+power.system.24.req [0,1,4]
+power.system.24.draw 10
+
+power.system.25 {}
+power.system.25.name far-reach
+power.system.25.rlv touchfar:20=?
+power.system.25.req [0,13, 17]
+power.system.25.draw 20
+
+power.system.26 {}
+power.system.26.name far-cam
+power.system.26.rlv camdistmax:20=?
+power.system.26.req [0,1, 22]
+power.system.26.draw 20
+
+power.system.27 {}
+power.system.27.name touch-self
+power.system.27.rlv touchattachself=?
+power.system.27.req [0,13]
+power.system.27.draw 5
+
+m:power.e.22 ["camera",2,"power camera toggle","status.state|22"]
+m:power.e.23 ["inventory",2,"power inventory toggle","status.state|23"]
+m:power.e.24 ["reader",2,"power reader toggle","status.state|24"]
+m:power.e.25 ["far reach",2,"power far-reach toggle","status.state|25"]
+m:power.e.26 ["far cam",2,"power far-cam toggle","status.state|26"]
+m:power.e.27 ["touch self",2,"power touch-self toggle","status.state|27"]
+m:power.e.28 ["power profiles...",1,"m:profile"]
+m:power.e.29 ["back",1,"m:main"]
