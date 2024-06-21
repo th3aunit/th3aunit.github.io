@@ -3,9 +3,9 @@ if $wlen > 3 then jump namecheck
 jump cleanup
 
 @namecheck:
-    set n1 1 in $me
-    set n2 2 in $me
-    set n3 3 in $me
+    set n1 %word 1 in $me
+    set n2 %word 2 in $me
+    set n3 %word 3 in $me
 
     echo $n1
     echo $n2
