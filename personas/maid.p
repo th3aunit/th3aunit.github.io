@@ -2,11 +2,11 @@ persona set marker 28cf0d04-5c84-e3d3-ac7d-d644be2146a9 4dd58695-8b24-9ded-7c11-
 persona set path $rlv/persona/maid
 persona set action {}
 
-persona set action.yes say Affirmative
-persona set action.no say Negative
-persona set action.hi say Greetings
-persona set action.bye say Good bye
-persona set action.help say What do you need cleaned?
+persona set action.yes Affirmative
+persona set action.no Negative
+persona set action.hi Greetings
+persona set action.bye Good bye
+persona set action.help? What do you need cleaned?
 
 policy bolts on
 
