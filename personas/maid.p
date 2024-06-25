@@ -1,4 +1,5 @@
-persona set marker d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741
+persona set marker 28cf0d04-5c84-e3d3-ac7d-d644be2146a9 4dd58695-8b24-9ded-7c11-a9304acdecd7 a8e2016b-874e-7369-86e2-4a246f849a39
+persona set path $rlv/persona/maid
 persona set action {}
 
 persona set action.yes say Affirmative

@@ -1,4 +1,5 @@
 persona set marker d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741 d189e492-93ad-3f2c-698d-d37239d5e741
+persona set path $rlv/persona/mare
 persona set action {}
 
 persona set action.yes say /me stomps once
